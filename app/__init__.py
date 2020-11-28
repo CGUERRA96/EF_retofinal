@@ -40,4 +40,5 @@ docs = FlaskApiSpec(app)
 
 from app.routes.index import initialize_routes
 
-from app.models import user
+
+from app.models import persona, tipo_rol, user, categoria, curso, plan_curso, oferta_curso 
