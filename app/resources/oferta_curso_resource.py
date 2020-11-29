@@ -28,7 +28,7 @@ class Oferta_CursoApi(MethodResource,Resource):
                     'id': i.id,
                     'curso_id': i.curso_id,
                     'curso': {
-                        'name': curso.curso
+                        'name': curso.nombre_curso
                     },
                     'fechainicio': i.fechainicio,
                     'fechafin': i.fechafin,
