@@ -3,6 +3,7 @@ from app.resources.auth_resource import LoginApi, SignupApi
 from app.resources.test_resource import TestApi
 from app.resources.curso_resource import CursoApi
 from app.resources.oferta_curso_resource import Oferta_CursoApi
+from app.resources.plan_curso_resource import Plan_CursoApi
 
 def initialize_routes(api_rest, doc_rest):
     # Registro
@@ -20,6 +21,10 @@ def initialize_routes(api_rest, doc_rest):
     #Oferta Cursos
     api_rest.add_resource(Oferta_CursoApi, '/api/Oferta_Curso')
     doc_rest.register(Oferta_CursoApi)
+
+    #Plan Curso
+    api_rest.add_resource(Plan_CursoApi, '/api/Plan_Curso')
+    doc_rest.register(Plan_CursoApi)
 
 
 initialize_routes(api, docs)
